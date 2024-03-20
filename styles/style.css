@@ -2,18 +2,12 @@ address {
   font-style: normal;
 }
 
-a {
-  text-decoration: none;
-}
-
-/* начало headera */
-
 .header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   width: 100%;
-  margin: 92px 0 96px 0;
+  margin: 92px 0 92px 2px;
   font-size: 18px;
 }
 
@@ -31,14 +25,18 @@ a {
   list-style: none;
 }
 
+.header__link_active {
+  text-decoration: none;
+}
+
 .header__links-list-item {
   list-style: circle;
 }
 
 .header__link,
 .address a {
-  border-bottom: 1px #000 solid;
   letter-spacing: 0.2px;
+  text-underline-offset: 4px;
 
 }
 
@@ -48,4 +46,69 @@ a {
   white-space: normal;
 }
 
-/* конец headera */
+.cover {
+  position: relative;
+  background-image: url("/images/cover.jpg");
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+.cover__title {
+  width: 100%;
+  font-size: 100px;
+  padding: 165px 21px 40px 51px;
+  letter-spacing: 8px;
+}
+
+.aligned-text,
+.aligned-text_center,
+.aligned-text_right {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+  line-height: 136px;
+}
+
+.aligned-text_right {
+  text-align: right;
+  line-height: 103px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 31px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 29px;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px 52px 78px;
+  margin-top: 43px;
+  align-items: center;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  font-weight: 400;
+  word-spacing: 18.5px;
+}
+
+.bet-button {
+  background-color: transparent;
+  border: 1px #fff solid;
+  color: #fff;
+  padding: 12px 32px 11px 31px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
