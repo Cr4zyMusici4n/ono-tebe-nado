@@ -7,12 +7,13 @@ address {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   width: 100%;
-  margin: 92px 0 92px 2px;
+  margin: 92px 0 92px 0;
+  padding: 0 24px 0 24px;
   font-size: 18px;
 }
 
 .header__menu {
-  padding: 0 36px 0 49px;
+  padding: 0 36px 0 26.52px;
 }
 
 .header__links-list {
@@ -48,10 +49,11 @@ address {
 
 .cover {
   position: relative;
-  background-image: url("/images/cover.jpg");
-  background-size: cover;
   color: #fff;
   text-transform: uppercase;
+  background-image: url("/images/cover.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
@@ -60,9 +62,9 @@ address {
 
 .cover__title {
   width: 100%;
+  padding: 165px 50px 51px 50px;
   font-size: 100px;
-  padding: 165px 21px 40px 51px;
-  letter-spacing: 8px;
+  letter-spacing: 5px;
 }
 
 .aligned-text,
@@ -72,43 +74,67 @@ address {
 }
 
 .aligned-text_center {
-  text-align: center;
   line-height: 136px;
+  text-align: center;
 }
 
 .aligned-text_right {
-  text-align: right;
   line-height: 103px;
+  text-align: right;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 31px;
+.aligned-text .letter-spacing-extended {
+  letter-spacing: 30px;
 }
 
-.no-letter-spacing {
-  letter-spacing: 29px;
+/* .aligned-text .no-letter-spacing {
+  letter-spacing: 0px;
+} */
+
+.aligned-text_center .letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.aligned-text_center .no-letter-spacing {
+  letter-spacing: 62px;
+}
+
+.aligned-text_right .letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.aligned-text_right .letter-spacing-extended-a {
+  letter-spacing: 1px;
+}
+
+.aligned-text_right .letter-spacing-extended-d {
+  letter-spacing: 1px;
+}
+
+.aligned-text_right .no-letter-spacing {
+  letter-spacing: 2px;
 }
 
 .cover__description {
   display: flex;
   justify-content: space-between;
-  padding: 50px 50px 52px 78px;
-  margin-top: 43px;
   align-items: center;
+  margin-top: 33px;
+  padding: 50px 50px 51px 78px;
 }
 
 .cover__description-text {
-  font-size: 22px;
   font-weight: 400;
+  font-size: 22px;
   word-spacing: 18.5px;
 }
 
 .bet-button {
-  background-color: transparent;
   border: 1px #fff solid;
-  color: #fff;
   padding: 12px 32px 11px 31px;
+  color: #fff;
+  font-weight: 400;
   font-size: 22px;
   text-transform: uppercase;
-  font-weight: 400;
+  background-color: transparent;
 }
