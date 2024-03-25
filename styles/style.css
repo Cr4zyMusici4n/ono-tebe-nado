@@ -1,3 +1,28 @@
+.address {
+  max-width: 214px;
+  line-height: 24px;
+  white-space: normal;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+/* класс для выравнивания ширины колонок в секции lots и для начальной колонки в секции about */
+
+.flex__item {
+  width: 334px;
+}
+
+/* класс для заголовков второго уровня */
+
+.subtitle {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -141,6 +166,7 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   margin-bottom: 30px;
 }
@@ -239,7 +265,6 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: start;
-  max-height: 98px;
   margin: 180px 50px 88px;
   padding-top: 2px;
   font-size: 18px;
